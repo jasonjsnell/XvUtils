@@ -12,6 +12,7 @@
 		96966E981E78CABE00EF4032 /* XvTourDataObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E941E78CABE00EF4032 /* XvTourDataObj.swift */; };
 		96966E991E78CABE00EF4032 /* XvTourMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E951E78CABE00EF4032 /* XvTourMainViewController.swift */; };
 		96966E9A1E78CABE00EF4032 /* TourPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E961E78CABE00EF4032 /* TourPanelViewController.swift */; };
+		96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */; };
 		96F377A21E70E7C7000522BD /* XvUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F377A01E70E7C7000522BD /* XvUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96F377AA1E70E7F5000522BD /* Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377A91E70E7F5000522BD /* Anim.swift */; };
 		96F377B21E70F9A8000522BD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377B11E70F9A8000522BD /* Device.swift */; };
@@ -25,6 +26,7 @@
 		96966E941E78CABE00EF4032 /* XvTourDataObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XvTourDataObj.swift; path = Public/Tour/XvTourDataObj.swift; sourceTree = "<group>"; };
 		96966E951E78CABE00EF4032 /* XvTourMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XvTourMainViewController.swift; path = Public/Tour/XvTourMainViewController.swift; sourceTree = "<group>"; };
 		96966E961E78CABE00EF4032 /* TourPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TourPanelViewController.swift; path = Public/Tour/TourPanelViewController.swift; sourceTree = "<group>"; };
+		96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObserverManager.swift; path = XvUtils/Public/ObserverManager.swift; sourceTree = "<group>"; };
 		96F3779D1E70E7C7000522BD /* XvUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XvUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F377A01E70E7C7000522BD /* XvUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XvUtils.h; sourceTree = "<group>"; };
 		96F377A11E70E7C7000522BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				96F377A91E70E7F5000522BD /* Anim.swift */,
 				96F377B11E70F9A8000522BD /* Device.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
+				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
 				96966E891E78BC3C00EF4032 /* Tour */,
 				96F3779F1E70E7C7000522BD /* Private */,
 			);
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96966E991E78CABE00EF4032 /* XvTourMainViewController.swift in Sources */,
+				96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */,
 				96966E971E78CABE00EF4032 /* XvTourConstants.swift in Sources */,
 				96966E981E78CABE00EF4032 /* XvTourDataObj.swift in Sources */,
 				96966E9A1E78CABE00EF4032 /* TourPanelViewController.swift in Sources */,
