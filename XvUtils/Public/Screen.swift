@@ -88,7 +88,43 @@ public class Screen  {
         }
     }
     
-    //private helper
+    //convert percentages into screen locations based on current screen size
+    public static func getCGPoints(fromPercentageLocationArray:[[Float]]) -> [CGPoint] {
+        
+        var cgPoints:[CGPoint] = []
+        
+        for percentageLocation in fromPercentageLocationArray {
+            
+            cgPoints.append(getCGPoint(fromPercentageLocation: percentageLocation))
+            
+        }
+        
+        return cgPoints
+        
+    }
+    
+    
+    //private helpers
+    public static func getCGPoint(fromPercentageLocation:[Float]) -> CGPoint {
+        
+        let xPct:Float = fromPercentageLocation[0] - widthPercentageOffset()
+        let yPct:Float = fromPercentageLocation[1] - heightPercentageOffset()
+        
+        let xLoc:CGFloat = CGFloat(Number.get(
+            percentage: xPct,
+            ofValue: Float(Screen.max())
+        ))
+        
+        let yLoc:CGFloat = CGFloat(Number.get(
+            percentage: yPct,
+            ofValue: Float(Screen.max())
+        ))
+        
+        return CGPoint(x:xLoc, y:yLoc)
+        
+    }
+    
+    
     fileprivate static func getPercentageOffset() -> Float {
         return Number.getPercentage(value1: Float((max()-min()) / 2), ofValue2: Float(max()))
     }
