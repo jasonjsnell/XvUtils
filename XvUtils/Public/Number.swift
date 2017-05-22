@@ -62,7 +62,11 @@ public class Number{
         return  (ofValue * percentage) / 100
     }
     
-    //scale percentage
-    //take a value and scale it to the screen
+    //MARK: GEOMETRY
+    public class func getDistance(betweenPointA:CGPoint, andPointB:CGPoint) -> CGFloat {
+        let xDist = betweenPointA.x - andPointB.x
+        let yDist = betweenPointA.y - andPointB.y
+        return CGFloat(sqrt((xDist * xDist) + (yDist * yDist)))
+    }
     
 }
