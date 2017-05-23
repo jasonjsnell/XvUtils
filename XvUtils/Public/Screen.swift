@@ -107,8 +107,8 @@ public class Screen  {
     //private helpers
     public static func getCGPoint(fromPercentageLocation:[Float]) -> CGPoint {
         
-        let xPct:Float = fromPercentageLocation[0] - widthPercentageOffset()
-        let yPct:Float = fromPercentageLocation[1] - heightPercentageOffset()
+        let xPct:Float = fromPercentageLocation[0]
+        let yPct:Float = fromPercentageLocation[1] 
         
         let xLoc:CGFloat = CGFloat(Number.get(
             percentage: xPct,
