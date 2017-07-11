@@ -33,7 +33,7 @@ open class ObserverManager:NSObject {
                 )
             }
         } else {
-            print("HELPER: addObservers error, notification count != selector count")
+            print("HELPER: Error: addObservers error, notification count != selector count")
         }
         
     }
