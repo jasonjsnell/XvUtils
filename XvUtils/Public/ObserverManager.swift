@@ -26,8 +26,8 @@ open class ObserverManager:NSObject {
             for i:Int in 0..<notificationNames.count {
                 
                 nc.addObserver(
-                    self, selector:
-                    notificationSelectors[i],
+                    self,
+                    selector: notificationSelectors[i],
                     name: Notification.Name(rawValue: notificationNames[i]),
                     object: nil
                 )
