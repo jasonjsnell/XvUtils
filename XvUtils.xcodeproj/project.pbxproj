@@ -62,12 +62,12 @@
 		96F377931E70E7C7000522BD = {
 			isa = PBXGroup;
 			children = (
-				96FC60DA1E75B70200A61BD6 /* Text.swift */,
-				9689FFBC1E72DA6D004BCB09 /* Screen.swift */,
 				96F377A91E70E7F5000522BD /* Anim.swift */,
 				96F377B11E70F9A8000522BD /* Device.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
 				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
+				9689FFBC1E72DA6D004BCB09 /* Screen.swift */,
+				96FC60DA1E75B70200A61BD6 /* Text.swift */,
 				96966E891E78BC3C00EF4032 /* Tour */,
 				96F3779F1E70E7C7000522BD /* Private */,
 			);

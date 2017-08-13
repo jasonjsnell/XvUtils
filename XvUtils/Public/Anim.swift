@@ -61,23 +61,37 @@ public class Anim{
     
     public class func fadeOut(target:UIView, withDuration:Double){
         
-        fadeOut(target: target, afterDelay: 0, withDuration: withDuration)
+        fadeOut(target: target, toAlpha:0, afterDelay: 0, withDuration: withDuration)
     }
     
     public class func fadeOut(target:UIView, afterDelay:Double){
         
-        fadeOut(target: target, afterDelay: afterDelay, withDuration: ANIM_SPEED)
+        fadeOut(target: target, toAlpha:0, afterDelay: afterDelay, withDuration: ANIM_SPEED)
+    }
+    
+    public class func fadeOut(target:UIView, toAlpha:CGFloat){
         
+        fadeOut(target: target, toAlpha: toAlpha, afterDelay: 0, withDuration: ANIM_SPEED)
     }
     
     fileprivate class func fadeOut(target:UIView, afterDelay:Double, withDuration:Double){
+        
+        fadeOut(target: target, toAlpha: 0, afterDelay: afterDelay, withDuration: withDuration)
+    }
+    
+    public class func fadeOut(target:UIView, toAlpha:CGFloat, withDuration:Double){
+        
+        fadeOut(target: target, toAlpha:toAlpha, afterDelay: 0, withDuration: withDuration)
+    }
+    
+    fileprivate class func fadeOut(target:UIView, toAlpha:CGFloat, afterDelay:Double, withDuration:Double){
         
         UIView.animate(
             withDuration: withDuration,
             delay: afterDelay,
             options: UIViewAnimationOptions(),
             animations: {
-                target.alpha = 0
+                target.alpha = toAlpha
         },
             completion: nil)
     }
