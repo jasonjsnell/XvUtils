@@ -55,11 +55,8 @@ public class Text{
         } else {
             
             print("TEXT: Error creating font for label")
-            
-            
         }
 
-        
         return nil
         
     }
