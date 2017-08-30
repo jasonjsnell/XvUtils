@@ -33,6 +33,12 @@ public class Anim{
         
     }
     
+    public class func fadeIn(target:UIView, afterDelay:Double, withDuration:Double){
+        
+        fadeIn(target: target, afterDelay: afterDelay, toAlpha: 1.0, withDuration: withDuration)
+        
+    }
+    
     public class func fadeIn(target:UIView, afterDelay:Double, toAlpha:CGFloat){
         
         fadeIn(target: target, afterDelay: afterDelay, toAlpha: toAlpha, withDuration: ANIM_SPEED)
