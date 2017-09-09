@@ -8,7 +8,6 @@
 
 //classes that check the performance:
 
-//metronome, when setting a timer loop
 //visual output, removing and limiting visuals
 //audio mixer, limits channels
 
