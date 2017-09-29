@@ -86,7 +86,7 @@ class TourPanelViewController: UIViewController {
                 width:self.descLabel!.frame.size.width,
                 height:CGFloat.greatestFiniteMagnitude),
             options: NSStringDrawingOptions.usesLineFragmentOrigin,
-            attributes: [NSFontAttributeName: descLabel!.font],
+            attributes: [NSAttributedStringKey.font: descLabel!.font],
             context: nil).size.height
         
         //put the new height into the frame

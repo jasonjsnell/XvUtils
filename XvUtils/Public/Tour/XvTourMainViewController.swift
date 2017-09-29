@@ -167,7 +167,7 @@ public class XvTourMainViewController: UIViewController, UIGestureRecognizerDele
             repeats: false)
     }
     
-    internal func requiredDelayPassed(){
+    @objc internal func requiredDelayPassed(){
         if (debug){
             print("TOUR VC: Required delay has passed")
         }
@@ -185,7 +185,7 @@ public class XvTourMainViewController: UIViewController, UIGestureRecognizerDele
             repeats: false)
     }
     
-    internal func maxTimePerScreenPassed(){
+    @objc internal func maxTimePerScreenPassed(){
         if (debug){
             print("TOUR VC: Max timer per screen passed")
         }
@@ -230,7 +230,7 @@ public class XvTourMainViewController: UIViewController, UIGestureRecognizerDele
     
     }
     
-    public func panDetected(recognizer:UIPanGestureRecognizer){
+    @objc public func panDetected(recognizer:UIPanGestureRecognizer){
         
         //custom pan just for the tour
         
