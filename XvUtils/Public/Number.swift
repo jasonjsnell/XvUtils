@@ -69,4 +69,22 @@ public class Number{
         return CGFloat(sqrt((xDist * xDist) + (yDist * yDist)))
     }
     
+    //MARK: CIRCLES
+    public class func getRadian(ofView:UIView) -> Float {
+        return (atan2f(Float(ofView.transform.b), Float(ofView.transform.a)))
+    }
+    
+    public class func getDegree(ofView:UIView) -> Double {
+        let radian:Float = getRadian(ofView: ofView)
+        return getDegree(fromRadian: Double(radian))
+    }
+    
+    public class func getRadian(fromDegree:Double) -> Double {
+        return fromDegree * Double.pi / 180
+    }
+    
+    public class func getDegree(fromRadian:Double) -> Double {
+        return fromRadian * 180 / Double.pi
+    }
+    
 }
