@@ -43,6 +43,10 @@ public class Screen  {
         }
     }
     
+    public static func center() -> CGPoint {
+        return CGPoint(x: width() / 2, y: height() / 2)
+    }
+    
     //MARK:IMAGE SCALE
     public static func scale() -> CGFloat {
         
