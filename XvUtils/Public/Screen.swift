@@ -47,6 +47,14 @@ public class Screen  {
         return CGPoint(x: width() / 2, y: height() / 2)
     }
     
+    public static func onScreenXZero() -> CGFloat {
+        return (max() / 2) - (width() / 2)
+    }
+    
+    public static func onScreenYZero() -> CGFloat {
+        return (max() / 2) - (height() / 2)
+    }
+    
     //MARK:IMAGE SCALE
     public static func scale() -> CGFloat {
         
