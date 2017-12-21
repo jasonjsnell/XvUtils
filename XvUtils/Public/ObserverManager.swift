@@ -49,6 +49,15 @@ open class ObserverManager:NSObject {
         
         
     }
+    
+    public func postNotification(name:String, userInfo:[AnyHashable : Any]?){
+        
+        let notification:Notification.Name = Notification.Name(rawValue: name)
+        NotificationCenter.default.post(
+            name: notification,
+            object: nil,
+            userInfo: userInfo)
+    }
 
     
 }
