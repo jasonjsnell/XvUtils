@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public class Number{
     
@@ -58,7 +59,15 @@ public class Number{
         return (value1 * 100) / ofValue2
     }
     
+    public class func getPercentage(value1:CGFloat, ofValue2:CGFloat) -> CGFloat {
+        return (value1 * 100) / ofValue2
+    }
+    
     public class func get(percentage:Float, ofValue:Float) -> Float {
+        return  (ofValue * percentage) / 100
+    }
+    
+    public class func get(percentage:CGFloat, ofValue:CGFloat) -> CGFloat {
         return  (ofValue * percentage) / 100
     }
     

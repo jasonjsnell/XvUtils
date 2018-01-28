@@ -169,7 +169,7 @@ class TourPanelViewController: UIViewController {
     
     fileprivate func initBg(){
         
-        bgWidth = Screen.width() - BG_SIDE_MARGIN
+        bgWidth = Screen.width - BG_SIDE_MARGIN
         if (bgWidth > BG_WIDTH_MAX){
             bgWidth = BG_WIDTH_MAX
         }

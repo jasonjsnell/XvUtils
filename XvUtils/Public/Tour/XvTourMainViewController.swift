@@ -44,15 +44,15 @@ public class XvTourMainViewController: UIViewController, UIGestureRecognizerDele
         //take up entire screen
         view.frame = CGRect(
             x: 0, y: 0,
-            width: Screen.width(),
-            height: Screen.max())
+            width: Screen.width,
+            height: Screen.max)
         
         //add panel
         panel.view.frame = CGRect(
-            x:(Screen.width() / 2),
-            y: (Screen.height() / 2),
-            width: Screen.width(),
-            height: Screen.height())
+            x:(Screen.width / 2),
+            y: (Screen.height / 2),
+            width: Screen.width,
+            height: Screen.height)
         
         view.addSubview(panel.view)
         
@@ -265,7 +265,7 @@ public class XvTourMainViewController: UIViewController, UIGestureRecognizerDele
             
             //position panel based data value
             if (currScreenData.position == XvTourConstants.POSITION_BOTTOM){
-                if (Screen.orientation() == Screen.ORIENTATION_LANDSCAPE){
+                if (Screen.orientation == Screen.ORIENTATION_LANDSCAPE){
                     xVariant = 4 //left
                 } else {
                     yVariant = 1.25 //bottom
@@ -275,10 +275,10 @@ public class XvTourMainViewController: UIViewController, UIGestureRecognizerDele
             
             //create new rect
             let newPanelRect:CGRect = CGRect(
-                x:(Screen.width() / xVariant) - (newPanelSize.width/2),
-                y: (Screen.height() / yVariant) - (newPanelSize.height/2),
-                width: Screen.width(),
-                height: Screen.height())
+                x:(Screen.width / xVariant) - (newPanelSize.width/2),
+                y: (Screen.height / yVariant) - (newPanelSize.height/2),
+                width: Screen.width,
+                height: Screen.height)
             
             //animate the transition
             Anim.redraw(target: panel.view, toRect: newPanelRect, afterDelay: 0.0)
