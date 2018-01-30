@@ -11,8 +11,6 @@ import UIKit
 
 public class Screen  {
     
-    //TODO: change all functions to variables
-    
     //MARK:VARS
     public static let ORIENTATION_LANDSCAPE:String = "orientationLandscape"
     public static let ORIENTATION_PORTRAIT:String = "orientationPortrait"
