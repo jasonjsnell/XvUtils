@@ -8,10 +8,11 @@
 
 import StoreKit
 
-public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
+//public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
 
 public class IAP:NSObject  {
     
+    /*
     //MARK: - VARS
     
     //MARK: Public
@@ -232,4 +233,5 @@ extension IAP: SKPaymentTransactionObserver {
         
         
     }
+    */
 }

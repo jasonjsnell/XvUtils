@@ -7,35 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9689FFBD1E72DA6D004BCB09 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689FFBC1E72DA6D004BCB09 /* Screen.swift */; };
-		96966E971E78CABE00EF4032 /* XvTourConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E931E78CABE00EF4032 /* XvTourConstants.swift */; };
-		96966E981E78CABE00EF4032 /* XvTourDataObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E941E78CABE00EF4032 /* XvTourDataObj.swift */; };
-		96966E991E78CABE00EF4032 /* XvTourMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E951E78CABE00EF4032 /* XvTourMainViewController.swift */; };
-		96966E9A1E78CABE00EF4032 /* TourPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96966E961E78CABE00EF4032 /* TourPanelViewController.swift */; };
 		96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */; };
 		96C81ED6202AF8F10061CADD /* IAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C81ED5202AF8F10061CADD /* IAP.swift */; };
 		96F377A21E70E7C7000522BD /* XvUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F377A01E70E7C7000522BD /* XvUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96F377AA1E70E7F5000522BD /* Anim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377A91E70E7F5000522BD /* Anim.swift */; };
 		96F377B21E70F9A8000522BD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377B11E70F9A8000522BD /* Device.swift */; };
 		96F377BA1E70FCA1000522BD /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377B91E70FCA1000522BD /* Number.swift */; };
-		96FC60DB1E75B70200A61BD6 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC60DA1E75B70200A61BD6 /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9689FFBC1E72DA6D004BCB09 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = XvUtils/Public/Screen.swift; sourceTree = "<group>"; };
-		96966E931E78CABE00EF4032 /* XvTourConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XvTourConstants.swift; path = Public/Tour/XvTourConstants.swift; sourceTree = "<group>"; };
-		96966E941E78CABE00EF4032 /* XvTourDataObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XvTourDataObj.swift; path = Public/Tour/XvTourDataObj.swift; sourceTree = "<group>"; };
-		96966E951E78CABE00EF4032 /* XvTourMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XvTourMainViewController.swift; path = Public/Tour/XvTourMainViewController.swift; sourceTree = "<group>"; };
-		96966E961E78CABE00EF4032 /* TourPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TourPanelViewController.swift; path = Public/Tour/TourPanelViewController.swift; sourceTree = "<group>"; };
 		96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObserverManager.swift; path = XvUtils/Public/ObserverManager.swift; sourceTree = "<group>"; };
 		96C81ED5202AF8F10061CADD /* IAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IAP.swift; path = XvUtils/Public/IAP.swift; sourceTree = "<group>"; };
 		96F3779D1E70E7C7000522BD /* XvUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XvUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F377A01E70E7C7000522BD /* XvUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XvUtils.h; sourceTree = "<group>"; };
 		96F377A11E70E7C7000522BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96F377A91E70E7F5000522BD /* Anim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Anim.swift; path = XvUtils/Public/Anim.swift; sourceTree = "<group>"; };
 		96F377B11E70F9A8000522BD /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = XvUtils/Public/Device.swift; sourceTree = "<group>"; };
 		96F377B91E70FCA1000522BD /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Number.swift; path = XvUtils/Public/Number.swift; sourceTree = "<group>"; };
-		96FC60DA1E75B70200A61BD6 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = XvUtils/Public/Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,29 +35,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96966E891E78BC3C00EF4032 /* Tour */ = {
-			isa = PBXGroup;
-			children = (
-				96966E951E78CABE00EF4032 /* XvTourMainViewController.swift */,
-				96966E941E78CABE00EF4032 /* XvTourDataObj.swift */,
-				96966E931E78CABE00EF4032 /* XvTourConstants.swift */,
-				96966E961E78CABE00EF4032 /* TourPanelViewController.swift */,
-			);
-			name = Tour;
-			path = XvUtils;
-			sourceTree = "<group>";
-		};
 		96F377931E70E7C7000522BD = {
 			isa = PBXGroup;
 			children = (
-				96F377A91E70E7F5000522BD /* Anim.swift */,
 				96F377B11E70F9A8000522BD /* Device.swift */,
 				96C81ED5202AF8F10061CADD /* IAP.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
 				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
-				9689FFBC1E72DA6D004BCB09 /* Screen.swift */,
-				96FC60DA1E75B70200A61BD6 /* Text.swift */,
-				96966E891E78BC3C00EF4032 /* Tour */,
 				96F3779F1E70E7C7000522BD /* Private */,
 			);
 			sourceTree = "<group>";
@@ -142,13 +112,13 @@
 		96F377941E70E7C7000522BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Jason J. Snell";
 				TargetAttributes = {
 					96F3779C1E70E7C7000522BD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LN2HJCURK9;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -185,17 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96966E991E78CABE00EF4032 /* XvTourMainViewController.swift in Sources */,
 				96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */,
-				96966E971E78CABE00EF4032 /* XvTourConstants.swift in Sources */,
-				96966E981E78CABE00EF4032 /* XvTourDataObj.swift in Sources */,
 				96C81ED6202AF8F10061CADD /* IAP.swift in Sources */,
-				96966E9A1E78CABE00EF4032 /* TourPanelViewController.swift in Sources */,
-				96F377AA1E70E7F5000522BD /* Anim.swift in Sources */,
-				96FC60DB1E75B70200A61BD6 /* Text.swift in Sources */,
 				96F377B21E70F9A8000522BD /* Device.swift in Sources */,
 				96F377BA1E70FCA1000522BD /* Number.swift in Sources */,
-				9689FFBD1E72DA6D004BCB09 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +287,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LN2HJCURK9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -335,10 +299,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonjsnell.XvUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALID_ARCHS = arm64;
 			};
 			name = Debug;
@@ -348,6 +312,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LN2HJCURK9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -359,9 +324,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonjsnell.XvUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALID_ARCHS = arm64;
 			};
 			name = Release;

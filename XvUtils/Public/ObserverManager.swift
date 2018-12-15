@@ -35,7 +35,6 @@ open class ObserverManager:NSObject {
         } else {
             print("HELPER: Error: addObservers error, notification count != selector count")
         }
-        
     }
     
     public func removeObservers(){
@@ -46,8 +45,6 @@ open class ObserverManager:NSObject {
                 name: Notification.Name(rawValue:notificationNames[i]),
                 object: nil)
         }
-        
-        
     }
     
     public func postNotification(name:String, userInfo:[AnyHashable : Any]?){
@@ -58,6 +55,4 @@ open class ObserverManager:NSObject {
             object: nil,
             userInfo: userInfo)
     }
-
-    
 }

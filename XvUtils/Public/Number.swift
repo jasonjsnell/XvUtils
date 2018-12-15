@@ -11,7 +11,13 @@ import CoreGraphics
 
 public class Number{
     
-    //MARK:RANDOM NUMS
+    
+    //MARK: ROUNDING
+    public class func getRoundedToTenths(from:Double) -> Double {
+        return (from * 10).rounded() / 10
+    }
+    
+    //MARK:RANDOM
     public class func getRandomFloat() -> Float {
         return Float(arc4random()) / 0xFFFFFFFF
     }
@@ -45,9 +51,22 @@ public class Number{
         return total
     }
     
+    public class func getTotal(ofArray:[Double]) -> Double {
+        var total:Double = 0
+        for value in ofArray {
+            total += Double(value)
+        }
+        return total
+    }
+    
     public class func getAverage(ofArray:[Int]) -> Int {
         let total:Int = getTotal(ofArray: ofArray)
         return total / ofArray.count
+    }
+    
+    public class func getAverage(ofArray:[Double]) -> Double {
+        let total:Double = getTotal(ofArray: ofArray)
+        return total / Double(ofArray.count)
     }
     
     //MARK:PERCENTAGES
@@ -68,6 +87,10 @@ public class Number{
     }
     
     public class func get(percentage:CGFloat, ofValue:CGFloat) -> CGFloat {
+        return  (ofValue * percentage) / 100
+    }
+    
+    public class func get(percentage:Double, ofValue:Double) -> Double {
         return  (ofValue * percentage) / 100
     }
     
@@ -94,6 +117,15 @@ public class Number{
     
     public class func getDegree(fromRadian:Double) -> Double {
         return fromRadian * 180 / Double.pi
+    }
+    
+    //MARK: COMPARISON
+    public class func isEven(number:Int) -> Bool {
+        if number % 2 == 0 {
+            return true
+        } else {
+            return false
+        }
     }
     
 }
