@@ -17,6 +17,10 @@ public class Number{
         return (from * 10).rounded() / 10
     }
     
+    public class func getRoundedToHundredths(from:Double) -> Double {
+        return (from * 100).rounded() / 100
+    }
+    
     //MARK:RANDOM
     public class func getRandomFloat() -> Float {
         return Float(arc4random()) / 0xFFFFFFFF
@@ -75,6 +79,10 @@ public class Number{
     }
     
     public class func getPercentage(value1:Float, ofValue2:Float) -> Float {
+        return (value1 * 100) / ofValue2
+    }
+    
+    public class func getPercentage(value1:Double, ofValue2:Double) -> Double {
         return (value1 * 100) / ofValue2
     }
     
