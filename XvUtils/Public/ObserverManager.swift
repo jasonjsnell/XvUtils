@@ -18,6 +18,7 @@ open class ObserverManager:NSObject {
         super.init()
     }
     
+    //add and remove several for an observer class
     public func addObservers(){
         
         removeObservers()
@@ -50,9 +51,21 @@ open class ObserverManager:NSObject {
     public func postNotification(name:String, userInfo:[AnyHashable : Any]?){
         
         let notification:Notification.Name = Notification.Name(rawValue: name)
-        NotificationCenter.default.post(
+        nc.post(
             name: notification,
             object: nil,
             userInfo: userInfo)
     }
+    
+    
+    //add single observer
+    public func addObserver(target:Any, selector:Selector, name:String){
+        nc.addObserver(
+            target,
+            selector: selector,
+            name: Notification.Name(rawValue: name),
+            object: nil
+        )
+    }
+    
 }

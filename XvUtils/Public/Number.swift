@@ -23,7 +23,7 @@ public class Number{
     
     //MARK:RANDOM
     public class func getRandomFloat() -> Float {
-        return Float(arc4random()) / 0xFFFFFFFF
+        return Float.random(in: 0 ..< 1)
     }
     
     public class func getRandomFloat(betweenMin: Float, andMax: Float) -> Float {
