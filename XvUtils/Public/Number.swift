@@ -12,7 +12,7 @@ import CoreGraphics
 public class Number{
     
     
-    //MARK: ROUNDING
+    //MARK: - ROUNDING
     public class func getRoundedToTenths(from:Double) -> Double {
         return (from * 10).rounded() / 10
     }
@@ -21,7 +21,7 @@ public class Number{
         return (from * 100).rounded() / 100
     }
     
-    //MARK:RANDOM
+    //MARK: - RANDOM
     public class func getRandomFloat() -> Float {
         return Float.random(in: 0 ..< 1)
     }
@@ -46,7 +46,7 @@ public class Number{
         return Int(arc4random_uniform(UInt32(andMax - betweenMin + 1))) + betweenMin
     }
     
-    //MARK:SUMMING
+    //MARK: - SUMMING
     public class func getTotal(ofArray:[Int]) -> Int {
         var total:Int = 0
         for value in ofArray {
@@ -73,7 +73,7 @@ public class Number{
         return total / Double(ofArray.count)
     }
     
-    //MARK:PERCENTAGES
+    //MARK: - PERCENTAGES
     public class func getPercentage(value1:Int, ofValue2:Int) -> Int {
         return (value1 * 100) / ofValue2
     }
@@ -102,14 +102,14 @@ public class Number{
         return  (ofValue * percentage) / 100
     }
     
-    //MARK: GEOMETRY
+    //MARK: - GEOMETRY
     public class func getDistance(betweenPointA:CGPoint, andPointB:CGPoint) -> CGFloat {
         let xDist = betweenPointA.x - andPointB.x
         let yDist = betweenPointA.y - andPointB.y
         return CGFloat(sqrt((xDist * xDist) + (yDist * yDist)))
     }
     
-    //MARK: CIRCLES
+    //MARK: - CIRCLES
     public class func getRadian(ofView:UIView) -> Float {
         return (atan2f(Float(ofView.transform.b), Float(ofView.transform.a)))
     }
@@ -127,7 +127,7 @@ public class Number{
         return fromRadian * 180 / Double.pi
     }
     
-    //MARK: COMPARISON
+    //MARK: - COMPARISON
     public class func isEven(number:Int) -> Bool {
         if number % 2 == 0 {
             return true
@@ -136,4 +136,17 @@ public class Number{
         }
     }
     
+    //MARK: - DATA
+    
+    // converts data type to Int32 types
+    public class func getInt(fromData:Data) ->Int32 {
+        
+        //2020 v2
+        var value:Int32 = 0
+        let bytesCopied = withUnsafeMutableBytes(of: &value, { fromData.copyBytes(to: $0)} )
+        assert(bytesCopied == MemoryLayout.size(ofValue: value))
+        
+        return value
+    }
+
 }
