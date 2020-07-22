@@ -56,11 +56,8 @@ public class Number{
     }
     
     public class func getTotal(ofArray:[Double]) -> Double {
-        var total:Double = 0
-        for value in ofArray {
-            total += Double(value)
-        }
-        return total
+        
+        return ofArray.reduce(0, +)
     }
     
     public class func getAverage(ofArray:[Int]) -> Int {
@@ -71,6 +68,24 @@ public class Number{
     public class func getAverage(ofArray:[Double]) -> Double {
         let total:Double = getTotal(ofArray: ofArray)
         return total / Double(ofArray.count)
+    }
+    
+    //takes an array of arrays
+    //and provides an average value for each position in the array
+    //(each array must be the same length)
+    //it returns an array with the averaged values
+    
+    public class func getAverageByIndex(arrays:[[Double]]) -> [Double]? {
+        
+        guard let length = arrays.first?.count else { return [] }
+
+        // check all the elements have the same length, otherwise returns nil
+        guard !arrays.contains(where:{ $0.count != length }) else { return nil }
+
+        return (0..<length).map { index in
+            let sum = arrays.map { $0[index] }.reduce(0, +)
+            return sum / Double(arrays.count)
+        }
     }
     
     //MARK: - PERCENTAGES
