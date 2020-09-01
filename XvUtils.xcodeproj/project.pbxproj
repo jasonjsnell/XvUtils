@@ -17,6 +17,7 @@
 		BB801A43249F7C87005325CA /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB801A42249F7C87005325CA /* Hex.swift */; };
 		BB801A45249FDBC8005325CA /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB801A44249FDBC8005325CA /* Bytes.swift */; };
 		BBAC72D2249C367800E7115E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC72D1249C367800E7115E /* JSON.swift */; };
+		BBB3CE2024F69A05009447CD /* Websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3CE1F24F69A05009447CD /* Websocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BB801A42249F7C87005325CA /* Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hex.swift; path = XvUtils/Public/Hex.swift; sourceTree = "<group>"; };
 		BB801A44249FDBC8005325CA /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bytes.swift; path = XvUtils/Public/Bytes.swift; sourceTree = "<group>"; };
 		BBAC72D1249C367800E7115E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = XvUtils/Public/JSON.swift; sourceTree = "<group>"; };
+		BBB3CE1F24F69A05009447CD /* Websocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Websocket.swift; path = XvUtils/Public/Websocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BB6235B2240D426500179484 /* Notifications.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
 				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
+				BBB3CE1F24F69A05009447CD /* Websocket.swift */,
 				96F3779F1E70E7C7000522BD /* Private */,
 			);
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				96C81ED6202AF8F10061CADD /* IAP.swift in Sources */,
 				96F377B21E70F9A8000522BD /* Device.swift in Sources */,
 				96F377BA1E70FCA1000522BD /* Number.swift in Sources */,
+				BBB3CE2024F69A05009447CD /* Websocket.swift in Sources */,
 				BB801A45249FDBC8005325CA /* Bytes.swift in Sources */,
 				BB588F5F21E7B0E900446CC8 /* LFO.swift in Sources */,
 			);
@@ -313,6 +317,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LN2HJCURK9;
@@ -339,6 +344,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LN2HJCURK9;
