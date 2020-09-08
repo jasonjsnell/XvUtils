@@ -140,7 +140,7 @@ public class WebSocket:NSObject, URLSessionWebSocketDelegate {
                     
                 } else {
                     
-                    if (self.debug) { print("WebSocket: Ping") }
+                    //if (self.debug) { print("WebSocket: Ping") }
                     self.observer?.didReceivePing()
                     
                     DispatchQueue.global().asyncAfter(deadline: .now() + self.pingInterval) {

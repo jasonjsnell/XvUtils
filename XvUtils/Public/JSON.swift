@@ -12,19 +12,12 @@ public class JSON {
     
     public class func getJSON(fromData:Data) -> [String:Any]? {
         
-        print("fromData", fromData)
-        
-        if let convertedString = String(data: fromData, encoding: String.Encoding.utf8) {
-            print(convertedString)
-        }
-        
         do {
             // make sure this JSON is in the format we expect
             if let json:[String:Any] = try JSONSerialization.jsonObject(
                 with: fromData,
                 options:[]) as? [String: Any] {
-                
-                print("json", json)
+      
                 return json
             }
             
