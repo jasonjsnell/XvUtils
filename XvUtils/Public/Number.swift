@@ -163,5 +163,11 @@ public class Number{
         
         return value
     }
+    
+    //MARK: - MISC
+    
+    public class func getFahrenheit(fromCelsius:Float) -> Float {
+        return (fromCelsius * 9 / 5) + 32.0
+    }
 
 }
