@@ -117,6 +117,12 @@ public class Number{
         return  (ofValue * percentage) / 100
     }
     
+    //MARK: - EXPONENTIALS
+    public class func getGeometricSeries(exponent:Double, seriesLength:Int) -> [Double] {
+        
+        return Array(sequence(first: exponent, next: { $0 * exponent }).prefix(seriesLength))
+    }
+    
     //MARK: - GEOMETRY
     public class func getDistance(betweenPointA:CGPoint, andPointB:CGPoint) -> CGFloat {
         let xDist = betweenPointA.x - andPointB.x
