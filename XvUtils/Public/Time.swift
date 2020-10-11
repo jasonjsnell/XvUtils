@@ -53,7 +53,7 @@ public class Time {
         
         //determine am/pm
         var ampm:String = "am"
-        if (hour >= 12) {
+        if (hour >= 12 && hour < 24) {
             ampm = "pm"
         }
         
