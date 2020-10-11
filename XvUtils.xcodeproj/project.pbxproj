@@ -14,6 +14,7 @@
 		96F377BA1E70FCA1000522BD /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377B91E70FCA1000522BD /* Number.swift */; };
 		BB588F5F21E7B0E900446CC8 /* LFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB588F5E21E7B0E900446CC8 /* LFO.swift */; };
 		BB6235B3240D426500179484 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6235B2240D426500179484 /* Notifications.swift */; };
+		BB7321F4253378A8001A1DA5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7321F3253378A8001A1DA5 /* Time.swift */; };
 		BB801A43249F7C87005325CA /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB801A42249F7C87005325CA /* Hex.swift */; };
 		BB801A45249FDBC8005325CA /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB801A44249FDBC8005325CA /* Bytes.swift */; };
 		BBAC72D2249C367800E7115E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC72D1249C367800E7115E /* JSON.swift */; };
@@ -30,6 +31,7 @@
 		96F377B91E70FCA1000522BD /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Number.swift; path = XvUtils/Public/Number.swift; sourceTree = "<group>"; };
 		BB588F5E21E7B0E900446CC8 /* LFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LFO.swift; path = XvUtils/Public/LFO.swift; sourceTree = "<group>"; };
 		BB6235B2240D426500179484 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = XvUtils/Public/Notifications.swift; sourceTree = "<group>"; };
+		BB7321F3253378A8001A1DA5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Time.swift; path = XvUtils/Public/Time.swift; sourceTree = "<group>"; };
 		BB801A42249F7C87005325CA /* Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hex.swift; path = XvUtils/Public/Hex.swift; sourceTree = "<group>"; };
 		BB801A44249FDBC8005325CA /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bytes.swift; path = XvUtils/Public/Bytes.swift; sourceTree = "<group>"; };
 		BBAC72D1249C367800E7115E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = XvUtils/Public/JSON.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				BB6235B2240D426500179484 /* Notifications.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
 				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
+				BB7321F3253378A8001A1DA5 /* Time.swift */,
 				BBB3CE1F24F69A05009447CD /* Websocket.swift */,
 				96F3779F1E70E7C7000522BD /* Private */,
 			);
@@ -176,6 +179,7 @@
 			files = (
 				BB6235B3240D426500179484 /* Notifications.swift in Sources */,
 				BB801A43249F7C87005325CA /* Hex.swift in Sources */,
+				BB7321F4253378A8001A1DA5 /* Time.swift in Sources */,
 				BBAC72D2249C367800E7115E /* JSON.swift in Sources */,
 				96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */,
 				96C81ED6202AF8F10061CADD /* IAP.swift in Sources */,
