@@ -41,9 +41,17 @@ public class Time {
     public class func convertToHourAndMinute(base10:Int) -> [Int] {
         
         let hour:Int = Int(Float(base10/100))
-        let minute:Int = base10 - (hour * 100)
+        
+        // let minute:Int = ( (base10 - (hour * 100)) * 60 ) / 100 //convert to 60
+        
+        let minute:Int = ( (base10 - (hour * 100)) * 60 ) / 100 //convert to 60
         
         return [hour, minute]
+    }
+    
+    public class func convertToMinutes(base10:Int) -> Int {
+        
+        return (base10 * 60) / 100 //convert to 60
     }
     
     public class func convertToStandardTimeString(base10:Int) -> String {
@@ -90,7 +98,7 @@ public class Time {
     //hourAndMinute = "10:30 pm"
     //hourAndMinute = "10:30"
     //hourAndMinute = "10:30pm"
-    func convertToBase10(hourAndMinute:String) -> Int? {
+    public class func convertToBase10(hourAndMinute:String) -> Int? {
         
         //incoming string requires colon
         if (!hourAndMinute.contains(":")) {
@@ -114,12 +122,12 @@ public class Time {
             let components:[Int] = timeString.split { $0 == ":" } .map { (x) -> Int in return Int(String(x))! }
             var hours:Int = components[0]
             let minutes:Int = components[1]
-            
+           
             //convert to miltary
             if (hours < 12) {
                 hours += 12
             }
-            return (hours * 100) + minutes
+            return convertToBase10(hour: hours, minute: minutes)
             
         } else {
             
@@ -131,9 +139,25 @@ public class Time {
             let hours:Int = components[0]
             let minutes:Int = components[1]
             
-            return (hours * 100) + minutes
+            return convertToBase10(hour: hours, minute: minutes)
         }
     }
+    
+    public class func convertToBase10(hour:Int, minute:Int) -> Int {
+        
+        return (convertToBase10(hour: hour)) + (convertToBase10(minute: minute))
+    }
+    
+    public class func convertToBase10(hour:Int) -> Int {
+        
+        return hour * 100
+    }
+    
+    public class func convertToBase10(minute:Int) -> Int {
+        
+        return Int((minute * 100) / 60)
+    }
+    
     
     public class func addZeros(toTimeString:String) -> String {
         
