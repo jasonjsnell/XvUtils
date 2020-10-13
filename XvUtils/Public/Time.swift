@@ -36,6 +36,14 @@ public class Time {
         return String(getCurrentHour()) + ":" + String(getCurrentMinute())
     }
     
+    public class func getCurrentBase10Time() -> Int {
+        
+        return convertToBase10(
+            hour: Time.getCurrentHour(),
+            minute: Time.getCurrentMinute()
+        )
+    }
+    
     
     //MARK: Convert to time format
     public class func convertToHourAndMinute(base10:Int) -> [Int] {
