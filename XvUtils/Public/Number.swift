@@ -70,6 +70,7 @@ public class Number{
         return total / Double(ofArray.count)
     }
     
+    //MARK: - Multi-array functions
     //takes an array of arrays
     //and provides an average value for each position in the array
     //(each array must be the same length)
@@ -85,6 +86,32 @@ public class Number{
         return (0..<length).map { index in
             let sum = arrays.map { $0[index] }.reduce(0, +)
             return sum / Double(arrays.count)
+        }
+    }
+    
+    public class func getSumByIndex(arrays:[[Double]]) -> [Double]? {
+        
+        guard let length = arrays.first?.count else { return [] }
+
+        // check all the elements have the same length, otherwise returns nil
+        guard !arrays.contains(where:{ $0.count != length }) else { return nil }
+
+        return (0..<length).map { index in
+            let sum = arrays.map { $0[index] }.reduce(0, +)
+            return sum
+        }
+    }
+    
+    public class func getMaxByIndex(arrays:[[Double]]) -> [Double]? {
+        
+        guard let length = arrays.first?.count else { return [] }
+
+        // check all the elements have the same length, otherwise returns nil
+        guard !arrays.contains(where:{ $0.count != length }) else { return nil }
+
+        return (0..<length).map { i in
+            let max:Double? = arrays.map { $0[i] }.max()
+            return max!
         }
     }
     
