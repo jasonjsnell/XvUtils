@@ -20,6 +20,27 @@ public class Number{
     public class func getRoundedToHundredths(from:Double) -> Double {
         return (from * 100).rounded() / 100
     }
+    public class func getNumberOfDigits(from:Double) -> Double {
+        return floor( log10( from ) ) + 1
+    }
+    
+    //if a stream of values has the same floor but the first 3 digits are changing
+    //this removes the thousands
+    //example 173455 -> 455
+    public class func getFirstHundred(of:Double) -> Double {
+        
+        if (of > 1000) {
+            
+            let digits:Double = Number.getNumberOfDigits(from: of)
+            let base:Double = pow(10, digits-1)
+            let roundedSample:Double = floor(of / (base/100)) * (base/100)
+            return of - roundedSample
+            
+        } else {
+            return of
+        }
+        
+    }
     
     //MARK: - RANDOM
     public class func getRandomFloat() -> Float {
