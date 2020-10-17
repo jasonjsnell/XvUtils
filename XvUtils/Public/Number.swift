@@ -81,14 +81,37 @@ public class Number{
         return ofArray.reduce(0, +)
     }
     
+    //MARK: - Statistics
     public class func getAverage(ofArray:[Int]) -> Int {
         let total:Int = getTotal(ofArray: ofArray)
         return total / ofArray.count
     }
     
     public class func getAverage(ofArray:[Double]) -> Double {
+        return getMean(ofArray: ofArray) //same as Mean
+    }
+    
+    public class func getMean(ofArray:[Double]) -> Double {
         let total:Double = getTotal(ofArray: ofArray)
         return total / Double(ofArray.count)
+    }
+    
+    public class func getMedian(ofArray: [Double]) -> Double {
+        
+        let sorted:[Double] = ofArray.sorted()
+        if (sorted.count % 2 != 0) {
+            return Double(sorted[sorted.count / 2])
+        } else {
+            return Double(sorted[sorted.count / 2] + sorted[sorted.count / 2 - 1]) / 2.0
+        }
+    }
+    
+    public class func getStandardDeviation(ofArray:[Double]) -> Double {
+        
+        let length:Double = Double(ofArray.count)
+        let avg:Double = ofArray.reduce(0, {$0 + $1}) / length
+        let sumOfSquaredAvgDiff:Double = ofArray.map { pow($0 - avg, 2.0)}.reduce(0, {$0 + $1})
+        return sqrt(sumOfSquaredAvgDiff / length)
     }
     
     //MARK: - Multi-array functions
