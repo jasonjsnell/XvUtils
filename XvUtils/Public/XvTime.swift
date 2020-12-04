@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Time {
+public class XvTime {
     
     //MARK: Current time
     public class func getCurrentHour() -> Int {
@@ -39,8 +39,8 @@ public class Time {
     public class func getCurrentBase10Time() -> Int {
         
         return convertToBase10(
-            hour: Time.getCurrentHour(),
-            minute: Time.getCurrentMinute()
+            hour: XvTime.getCurrentHour(),
+            minute: XvTime.getCurrentMinute()
         )
     }
     
