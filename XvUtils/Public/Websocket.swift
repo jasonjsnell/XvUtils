@@ -9,7 +9,7 @@
 import Foundation
 
 //another object that can listen to this class's updates
-public protocol WebSocketObserver:class {
+public protocol WebSocketObserver:AnyObject {
     
     func didConnect()
     func didDisconnect()
