@@ -19,6 +19,7 @@
 		BB801A45249FDBC8005325CA /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB801A44249FDBC8005325CA /* Bytes.swift */; };
 		BBAC72D2249C367800E7115E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC72D1249C367800E7115E /* JSON.swift */; };
 		BBB3CE2024F69A05009447CD /* Websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3CE1F24F69A05009447CD /* Websocket.swift */; };
+		BBF290E8266BE84C004099E5 /* LogarithmicScaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF290E7266BE84C004099E5 /* LogarithmicScaling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		BB801A44249FDBC8005325CA /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bytes.swift; path = XvUtils/Public/Bytes.swift; sourceTree = "<group>"; };
 		BBAC72D1249C367800E7115E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = XvUtils/Public/JSON.swift; sourceTree = "<group>"; };
 		BBB3CE1F24F69A05009447CD /* Websocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Websocket.swift; path = XvUtils/Public/Websocket.swift; sourceTree = "<group>"; };
+		BBF290E7266BE84C004099E5 /* LogarithmicScaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogarithmicScaling.swift; path = XvUtils/Public/LogarithmicScaling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				96C81ED5202AF8F10061CADD /* IAP.swift */,
 				BBAC72D1249C367800E7115E /* JSON.swift */,
 				BB588F5E21E7B0E900446CC8 /* LFO.swift */,
+				BBF290E7266BE84C004099E5 /* LogarithmicScaling.swift */,
 				BB6235B2240D426500179484 /* Notifications.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
 				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
@@ -184,6 +187,7 @@
 				96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */,
 				96C81ED6202AF8F10061CADD /* IAP.swift in Sources */,
 				96F377B21E70F9A8000522BD /* Device.swift in Sources */,
+				BBF290E8266BE84C004099E5 /* LogarithmicScaling.swift in Sources */,
 				96F377BA1E70FCA1000522BD /* Number.swift in Sources */,
 				BBB3CE2024F69A05009447CD /* Websocket.swift in Sources */,
 				BB801A45249FDBC8005325CA /* Bytes.swift in Sources */,
