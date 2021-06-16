@@ -12,6 +12,7 @@
 		96F377A21E70E7C7000522BD /* XvUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F377A01E70E7C7000522BD /* XvUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96F377B21E70F9A8000522BD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377B11E70F9A8000522BD /* Device.swift */; };
 		96F377BA1E70FCA1000522BD /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F377B91E70FCA1000522BD /* Number.swift */; };
+		BB39153B267A6BEA0044600B /* MusicScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39153A267A6BEA0044600B /* MusicScale.swift */; };
 		BB588F5F21E7B0E900446CC8 /* LFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB588F5E21E7B0E900446CC8 /* LFO.swift */; };
 		BB6235B3240D426500179484 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6235B2240D426500179484 /* Notifications.swift */; };
 		BB7321F4253378A8001A1DA5 /* XvTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7321F3253378A8001A1DA5 /* XvTime.swift */; };
@@ -30,6 +31,7 @@
 		96F377A11E70E7C7000522BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96F377B11E70F9A8000522BD /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = XvUtils/Public/Device.swift; sourceTree = "<group>"; };
 		96F377B91E70FCA1000522BD /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Number.swift; path = XvUtils/Public/Number.swift; sourceTree = "<group>"; };
+		BB39153A267A6BEA0044600B /* MusicScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MusicScale.swift; path = XvUtils/Public/MusicScale.swift; sourceTree = "<group>"; };
 		BB588F5E21E7B0E900446CC8 /* LFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LFO.swift; path = XvUtils/Public/LFO.swift; sourceTree = "<group>"; };
 		BB6235B2240D426500179484 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = XvUtils/Public/Notifications.swift; sourceTree = "<group>"; };
 		BB7321F3253378A8001A1DA5 /* XvTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XvTime.swift; path = XvUtils/Public/XvTime.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				BBAC72D1249C367800E7115E /* JSON.swift */,
 				BB588F5E21E7B0E900446CC8 /* LFO.swift */,
 				BBF290E7266BE84C004099E5 /* LogarithmicScaling.swift */,
+				BB39153A267A6BEA0044600B /* MusicScale.swift */,
 				BB6235B2240D426500179484 /* Notifications.swift */,
 				96F377B91E70FCA1000522BD /* Number.swift */,
 				96AB30F51E89CF6D00F1B304 /* ObserverManager.swift */,
@@ -183,6 +186,7 @@
 				BB6235B3240D426500179484 /* Notifications.swift in Sources */,
 				BB801A43249F7C87005325CA /* Hex.swift in Sources */,
 				BB7321F4253378A8001A1DA5 /* XvTime.swift in Sources */,
+				BB39153B267A6BEA0044600B /* MusicScale.swift in Sources */,
 				BBAC72D2249C367800E7115E /* JSON.swift in Sources */,
 				96AB30F61E89CF6D00F1B304 /* ObserverManager.swift in Sources */,
 				96C81ED6202AF8F10061CADD /* IAP.swift in Sources */,
